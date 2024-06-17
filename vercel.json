@@ -6,6 +6,7 @@
   ],
   "routes": [
     { "src": "/api/.*", "dest": "/api/preview.js" },
-    { "src": "/(.*)", "dest": "/dist/$1" }
+    { "src": "/(.*)", "dest": "/dist/$1" },
+    { "handle": "filesystem" }
   ]
 }
