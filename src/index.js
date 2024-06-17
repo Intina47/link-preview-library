@@ -6,7 +6,7 @@ import './styles/tailwind.css';
 const App = () => (
     <div className="container mx-auto p-4">
         <h1 className="text-2xl mb-4">Link Preview Example</h1>
-        <LinkPreview url="https://example.com" />
+        <LinkPreview url="https://www.youtube.com/watch?v=OAoJVyoTi78" />
     </div>
 );
 
