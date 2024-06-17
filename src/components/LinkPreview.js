@@ -8,7 +8,7 @@ const LinkPreview = ({ url, customStyle }) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`https://musical-funicular-59r4xrxxrqr2vvr6-3000.app.github.dev/preview?url=${encodeURIComponent(url)}`);
+                const response = await fetch(`https://link-preview-library.vercel.app/api/preview?url=${encodeURIComponent(url)}`);
                 const data = await response.json();
                 setMetadata(data);
             } catch (error) {
