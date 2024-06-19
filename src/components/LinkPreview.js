@@ -10,6 +10,7 @@ const LinkPreview = ({ url, customStyle }) => {
             try {
                 const response = await fetch(`https://link-preview-library.vercel.app/api/preview?url=${encodeURIComponent(url)}`);
                 const data = await response.json();
+                console.log('Data returned:', data);
                 setMetadata(data);
             } catch (error) {
                 setError('Failed to fetch the URL');
